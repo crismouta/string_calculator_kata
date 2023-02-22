@@ -24,4 +24,13 @@ class StringCalculatorTest extends TestCase
 
         $this->assertEquals(4, $result);
     }
+
+    public function test_return_num_when_recieves_two_numbers()
+    {
+        $string = new StringCalculator();
+
+        $result = $string->calculate("1,2");
+
+        $this->assertEquals(3, $result);
+    }
 }
