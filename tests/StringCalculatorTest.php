@@ -42,4 +42,13 @@ class StringCalculatorTest extends TestCase
 
         $this->assertEquals(45, $result);
     }
+
+    public function test_return_sum_when_recieves_string_with_new_line_separator()
+    {
+        $string = new StringCalculator();
+
+        $result = $string->calculate("1/n2,3");
+
+        $this->assertEquals(6, $result);
+    }
 }
