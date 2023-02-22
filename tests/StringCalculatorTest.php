@@ -25,12 +25,21 @@ class StringCalculatorTest extends TestCase
         $this->assertEquals(4, $result);
     }
 
-    public function test_return_num_when_recieves_two_numbers()
+    public function test_return_sum_when_recieves_two_numbers()
     {
         $string = new StringCalculator();
 
         $result = $string->calculate("1,2");
 
         $this->assertEquals(3, $result);
+    }
+
+    public function test_return_sum_when_recieves_more_than_one_number()
+    {
+        $string = new StringCalculator();
+
+        $result = $string->calculate("1,2,3,4,5,6,7,8,9");
+
+        $this->assertEquals(45, $result);
     }
 }
