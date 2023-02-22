@@ -5,8 +5,11 @@ namespace App;
 class StringCalculator
 
 {
-    public function calculate()
+    public function calculate($string)
     {
+        if($string != "") {
+            return $string;
+        }
         return 0;
     }
 }
