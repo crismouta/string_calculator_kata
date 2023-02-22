@@ -2,8 +2,11 @@
 
 namespace App;
 
-class StringCalculator 
+class StringCalculator
 
 {
-    
+    public function calculate()
+    {
+        return 0;
+    }
 }
